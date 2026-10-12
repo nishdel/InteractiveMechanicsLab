@@ -59,7 +59,9 @@ jobs:
         run: pnpm exec playwright install --with-deps chromium firefox webkit
 
       - name: E2E tests
-        run: pnpm test:e2e
+        # Firefox needs a display-backed GL context on the Linux runner.
+        # Keep the full 3D assertions; Xvfb supplies a display without a physical monitor.
+        run: xvfb-run --auto-servernum pnpm test:e2e --headed
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

@@ -284,6 +284,18 @@ A bounded read-only export-verifier proposal was delegated in OmniLAB run `7f5b6
 
 An early formatting command overlapped the first dependency installation and left an incomplete generated dependency link. The damaged generated tree was moved into the private audit workspace; a fresh serialized installation from the unchanged lockfile resolved it. All final validation gates passed afterward. This did not alter original project files, runtime source or tests. No project license was selected, and existing third-party attribution was retained.
 
+## Sanitized public preview (2026-10-12)
+
+This milestone supersedes the earlier cleanup-only publication block. Only the sanitized repository is used for public development. Its root is `b22f721286dd4d1f2e2c7392b2f55094f76127c4`; the original repository, history, privacy audit and excluded evidence remain local. Reinspection found one parentless root, verified public noreply metadata, 62 reviewed tracked files, and no private-value or credential-pattern findings. No original Git objects, alternates or remotes were transferred. The original archive and shared Git identity settings were preserved.
+
+The public repository is [nishdel/InteractiveMechanicsLab](https://github.com/nishdel/InteractiveMechanicsLab). GitHub Pages is configured with Actions as its source at [the demo URL](https://nishdel.github.io/InteractiveMechanicsLab/). The public README and all four genuine screenshots were inspected without signing in. No project license was selected; third-party notices are preserved. Owner manual acceptance is still outstanding.
+
+Local verification passed lint, formatting, strict TypeScript, all 78 unit/component tests, the Pages-subpath production build, and all 12 browser tests in Chromium, Firefox and WebKit. The application, physics, material data and browser assertions remain unchanged.
+
+The [first hosted run](https://github.com/nishdel/InteractiveMechanicsLab/actions/runs/38308896452) passed installation, lint, formatting, types, unit tests and build, but failed Firefox's 3D readiness assertion; 11 of 12 browser cases passed and deployment was correctly skipped. The Linux CI command now runs the complete browser suite headed under Xvfb, which supplies a virtual display for Firefox's GL context. This follows [Playwright's Linux headed-CI guidance](https://playwright.dev/docs/ci#running-headed); no assertion, test project or failure gate was removed. Hosted verification of this correction and the live deployment are pending at this checkpoint.
+
+Remaining manual checks: the owner should try the lesson in their existing Firefox profile, assess explanation and FMEA clarity, and perform assistive-technology and physical-device checks. The model remains an educational static analytical beam idealization, with no fatigue-life, clamp/contact or certification claim. Known bundle-size and dependency deprecation advisories remain. Recommended next milestone: owner acceptance and focused accessibility feedback, without expanding the simulation.
+
 ## Future milestones
 
 For each future milestone, add scope, automated verification, manual checklist, result, known issues, and follow-up work to this document. Preserve earlier results and update only corrections that are explicitly identified.
