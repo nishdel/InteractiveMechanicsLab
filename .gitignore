@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.omnilab/
+playwright-report/
+test-results/
+coverage/
+*.local
+*.log
+.cache/
+artifacts/

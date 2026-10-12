@@ -1,0 +1,49 @@
+{
+  "name": "interactive-mechanics-lab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5179 --strictPort",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4179 --strictPort",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc -b --pretty false",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.8.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.64.0",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.13.0",
+    "jsdom": "30.1.2",
+    "prettier": "3.9.10",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.1",
+    "vite": "8.3.4",
+    "vitest": "5.0.3"
+  }
+}

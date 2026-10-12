@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "materials": [
+    {
+      "id": "steel953",
+      "displayName": "Reynolds 953 steel",
+      "elasticModulusPa": 200000000000.0,
+      "densityKgM3": 7790,
+      "yieldStrengthPa": 1500000000.0,
+      "condition": "High-strength maraging stainless bicycle tubing",
+      "provenance": "Yield is the lower end of the published 1500–1900 MPa range; this specific alloy is not generic steel.",
+      "sourceUrl": "https://www.reynoldstechnology.biz/faqs-on-reynolds-steel-tubing/materials/",
+      "sourceLocation": "Reynolds 953: tensile strength / yield strength / stiffness modulus",
+      "accessed": "2026-10-11",
+      "warning": "Representative educational values, not certified design allowables."
+    },
+    {
+      "id": "aluminium6061",
+      "displayName": "Aluminium 6061-T6",
+      "elasticModulusPa": 68300000000.0,
+      "densityKgM3": 2700,
+      "yieldStrengthPa": 276000000.0,
+      "condition": "T6; published typical properties",
+      "provenance": "Kaiser KA-SH-6061-1.09 typical T6 values. The source explicitly lists E = 68.3 GPa.",
+      "sourceUrl": "https://online.kaiseraluminum.com/depot/PublicProductInformation/Document/1006/Kaiser_Aluminum_Shapes_Soft_Alloy.pdf",
+      "sourceLocation": "PDF pages 2–3 (indexes 1–2), 6061 mechanical and physical properties",
+      "accessed": "2026-10-11",
+      "warning": "Representative educational values, not certified design allowables."
+    },
+    {
+      "id": "titanium32",
+      "displayName": "Titanium Ti-3Al-2.5V",
+      "elasticModulusPa": 100000000000.0,
+      "densityKgM3": 4480,
+      "yieldStrengthPa": 483000000.0,
+      "condition": "Annealed",
+      "provenance": "E = 100 GPa is the midpoint of the listed 95–105 GPa range. Yield is the listed annealed minimum, not a certified value for a particular tube.",
+      "sourceUrl": "https://www.timet.com/documents/datasheets/alpha-and-beta-alloys/timetal-3-2.5.pdf",
+      "sourceLocation": "Page 1, tables 2–3; TIMET 1997 datasheet",
+      "accessed": "2026-10-11",
+      "warning": "Representative educational values, not certified design allowables."
+    }
+  ]
+}

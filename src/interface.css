@@ -1,0 +1,62 @@
+/* Integration layout for accessible navigation and the R3F viewport. */
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  transform: translateY(-200%);
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: #72e5bf;
+  color: #0b1018;
+}
+.skip-link:focus {
+  transform: translateY(0.5rem);
+}
+#lesson-controls {
+  min-width: 0;
+}
+#lesson-controls > .panel {
+  height: 100%;
+}
+.scene-boundary,
+.scene-stage {
+  height: 100%;
+  min-height: 0;
+}
+.scene-stage {
+  display: flex;
+  flex-direction: column;
+}
+.scene-canvas {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+.scene-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+.free-body-diagram {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.glossary caption,
+.fmea-table caption {
+  text-align: left;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+
+.status:empty {
+  margin: 0;
+}
