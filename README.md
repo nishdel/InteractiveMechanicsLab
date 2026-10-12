@@ -4,7 +4,7 @@
 
 **[Interactive demo](https://nishdel.github.io/InteractiveMechanicsLab/)** · [Calculation validation](docs/PHYSICS-VALIDATION.md) · [Architecture](docs/ARCHITECTURE.md)
 
-> This is a sanitized local publication candidate with fresh Git history. No upload or deployment is authorized in the current privacy task; the demo has not been verified live. The project owner has not completed manual acceptance testing. This is an educational analytical static-beam model, not a certified engineering product or a finite-element solver.
+> This public early preview is an educational analytical static-beam model, not a certified engineering product or a finite-element solver. The project owner has not completed manual acceptance testing. Automated verification and publication status are recorded in the living verification document.
 
 ## See the lesson
 
@@ -106,7 +106,9 @@ Known limits: no finite-element solution, detailed clamp contact/crushing, slip,
 
 ## Publishing future changes
 
-Open a pull request to `main`. The **Verify and deploy Pages** workflow checks formatting, lint, types, unit tests, the production build and browser interactions at `/InteractiveMechanicsLab/`; pull requests do not deploy or receive deployment permissions. After merge, validation runs again on that exact main commit, then only `dist/` is uploaded and deployed through the `github-pages` environment. GitHub Pages must use **GitHub Actions** as its publishing source. No custom domain or laptop tunnel is needed.
+Use this sanitized repository for public development. Its history starts at the reviewed clean root; the original development repository remains a local archive and must not be merged or added as a remote here. Keep private audit/evidence directories outside this repository.
+
+Open a pull request to `main`. The **Verify and deploy Pages** workflow checks formatting, lint, types, unit tests, the production build and browser interactions at `/InteractiveMechanicsLab/`; pull requests do not deploy or receive deployment permissions. After merge, validation runs again on that exact main commit, then only `dist/` is uploaded and deployed through the `github-pages` environment. GitHub Pages uses **GitHub Actions** as its publishing source. No custom domain or laptop tunnel is needed.
 
 ## License and notices
 
